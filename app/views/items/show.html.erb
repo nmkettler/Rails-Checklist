@@ -1,0 +1,8 @@
+<div class="col-md-6 col-md-offset-3">
+	<h2><%= @item.title %></h2>
+	<p><%= @item.description %></p>
+
+	<%= link_to "Edit", edit_item_path(@item) %>
+	<%= button_to "Delete", item_path(@item), :method=>:delete, :class=>:destroy %>
+	<%= link_to "Back", root_path %>
+</div>
